@@ -42,7 +42,7 @@ function App() {
     setTheme(e.target.value);
   };
   useEffect(() => {    
-    const socketConnection = io("http://localhost:5000", {
+    const socketConnection = io("https://moltaqa-it.onrender.com", {
       extraHeaders: {
         user_id,
         token,

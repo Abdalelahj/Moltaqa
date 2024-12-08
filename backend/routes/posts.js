@@ -33,7 +33,7 @@ postsRouter.delete('/savedTr/:id' , authentication , removeFromSaved)
 module.exports = postsRouter;
 
 
-/* http://localhost:5000/posts
+/* https://moltaqa-it.onrender.com/posts
     Don't Forget the Token !!!!!!!!!!!
 {
     "body":"test"

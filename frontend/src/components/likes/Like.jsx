@@ -13,7 +13,7 @@ const Like = ({ postId }) => {
   const fetchLikes = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/reacts/${postId}/likes`,
+        `https://moltaqa-it.onrender.com/reacts/${postId}/likes`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -32,7 +32,7 @@ const Like = ({ postId }) => {
   const toggleLike = async () => {
     try {
       const response = await axios.post(
-        `http://localhost:5000/reacts/${postId}/like`,
+        `https://moltaqa-it.onrender.com/reacts/${postId}/like`,
         {},
         {
           headers: {

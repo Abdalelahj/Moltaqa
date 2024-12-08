@@ -21,7 +21,7 @@ const userId=localStorage.getItem("user_id")
   });
   useEffect(() => {
     axios
-      .get("http://localhost:5000/users/all", {
+      .get("https://moltaqa-it.onrender.com/users/all", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -36,7 +36,7 @@ const userId=localStorage.getItem("user_id")
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/followers/${userId}/following`, {
+      .get(`https://moltaqa-it.onrender.com/followers/${userId}/following`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -54,7 +54,7 @@ const userId=localStorage.getItem("user_id")
 
     axios
       .post(
-        `http://localhost:5000/followers/${id}/follow`,
+        `https://moltaqa-it.onrender.com/followers/${id}/follow`,
         {},
         {
           headers: {

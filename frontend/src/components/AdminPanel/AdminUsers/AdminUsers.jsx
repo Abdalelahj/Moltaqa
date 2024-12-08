@@ -23,7 +23,7 @@ const AdminUsers = () => {
   const handleDeactivate = async (id) => {
     try {
       const deactivate = await axios.put(
-        `http://localhost:5000/users/sd/${id}`,
+        `https://moltaqa-it.onrender.com/users/sd/${id}`,
         {},
         {
           headers: {
@@ -41,7 +41,7 @@ const AdminUsers = () => {
   const handleDelete = async (id) => {
     try {
       const deleteSUers = await axios.delete(
-        `http://localhost:5000/users/hd/${id}`,
+        `https://moltaqa-it.onrender.com/users/hd/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -57,7 +57,7 @@ const AdminUsers = () => {
   const handleActivate = async (id) => {
     try {
       const activate = await axios.put(
-        `http://localhost:5000/users/${id}`,
+        `https://moltaqa-it.onrender.com/users/${id}`,
         { is_deleted: "0" },
         {
           headers: {

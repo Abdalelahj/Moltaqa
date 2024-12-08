@@ -24,7 +24,7 @@ const Notification = ({ socket }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/notify", {
+      .get("https://moltaqa-it.onrender.com/notify", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -44,7 +44,7 @@ const Register = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:5000/users/register", userInfo)
+      .post("https://moltaqa-it.onrender.com/users/register", userInfo)
       .then((result) => {
         dispatch(register(result.data.result));
         setStatus(true);
@@ -73,7 +73,7 @@ const Register = () => {
     };
 
     axios
-      .post("http://localhost:5000/users/register", data)
+      .post("https://moltaqa-it.onrender.com/users/register", data)
       .then((result) => {
         dispatch(register(result.data.result));
         setStatus(true);

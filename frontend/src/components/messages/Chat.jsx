@@ -19,7 +19,7 @@ const Chat = ({socket}) => {
   
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/followers/${user_id}/following`, {
+      .get(`https://moltaqa-it.onrender.com/followers/${user_id}/following`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

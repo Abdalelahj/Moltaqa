@@ -34,7 +34,7 @@ const ChatMessages = ({ socket, to, setShow }) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/messages/${userId}/${to}`, {
+      .get(`https://moltaqa-it.onrender.com/messages/${userId}/${to}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -47,7 +47,7 @@ const ChatMessages = ({ socket, to, setShow }) => {
       });
 
     axios
-      .get("http://localhost:5000/users/all")
+      .get("https://moltaqa-it.onrender.com/users/all")
       .then((res) => {
         setAllUsers(res.data.Users);
         const findUser = res.data.Users.find((user) => {

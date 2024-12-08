@@ -23,7 +23,7 @@ const Side = () => {
 
   const handleLogout = () => {
     axios
-      .put(`http://localhost:5000/users/isNotlogin/false/${userId}`, {})
+      .put(`https://moltaqa-it.onrender.com/users/isNotlogin/false/${userId}`, {})
       .then((result) => {
     dispatch(Logout());
 

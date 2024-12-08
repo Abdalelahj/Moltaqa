@@ -24,7 +24,7 @@ const AdminPosts = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/posts", {
+      .get("https://moltaqa-it.onrender.com/posts", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -39,7 +39,7 @@ const AdminPosts = () => {
 
   const handelDelete = (postId) => {
     axios
-      .delete(`http://localhost:5000/posts/${postId}/soft`, {
+      .delete(`https://moltaqa-it.onrender.com/posts/${postId}/soft`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -57,7 +57,7 @@ const AdminPosts = () => {
   };
   const handelHardDelete = (postId) => {
     axios
-      .delete(`http://localhost:5000/posts/${postId}/hard`, {
+      .delete(`https://moltaqa-it.onrender.com/posts/${postId}/hard`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

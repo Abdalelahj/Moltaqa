@@ -20,7 +20,7 @@ const SavedPost = () => {
     };
   useEffect(() => {
     axios
-      .get("http://localhost:5000/posts/saved", {
+      .get("https://moltaqa-it.onrender.com/posts/saved", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -39,7 +39,7 @@ const SavedPost = () => {
 
   const handleRemove = (id) => {
     axios
-      .delete(`http://localhost:5000/posts/savedTr/${id}`, {
+      .delete(`https://moltaqa-it.onrender.com/posts/savedTr/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

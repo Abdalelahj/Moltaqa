@@ -33,7 +33,7 @@ const AdminHome = () => {
   
   useEffect(() => {
     axios
-      .get("http://localhost:5000/reacts/likesAll", {
+      .get("https://moltaqa-it.onrender.com/reacts/likesAll", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -46,7 +46,7 @@ const AdminHome = () => {
       });
 
     axios
-      .get("http://localhost:5000/comments/", {
+      .get("https://moltaqa-it.onrender.com/comments/", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -58,7 +58,7 @@ const AdminHome = () => {
         console.log(err);
       });
     axios
-      .get("http://localhost:5000/followers", {
+      .get("https://moltaqa-it.onrender.com/followers", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -75,7 +75,7 @@ const AdminHome = () => {
       });
 
       axios
-      .get("http://localhost:5000/posts", {
+      .get("https://moltaqa-it.onrender.com/posts", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

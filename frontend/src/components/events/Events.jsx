@@ -15,7 +15,7 @@ const Events = ({ socket }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/users/all", {
+      .get("https://moltaqa-it.onrender.com/users/all", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -56,7 +56,7 @@ const Events = ({ socket }) => {
 
       axios
         .post(
-          `http://localhost:5000/greeting/send`,
+          `https://moltaqa-it.onrender.com/greeting/send`,
           { recipientId, greeting },
           {
             headers: {

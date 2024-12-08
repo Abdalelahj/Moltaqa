@@ -26,7 +26,7 @@ const AdminSide = () => {
   const token = localStorage.getItem("token");
   useEffect(() => {
     axios
-      .get("http://localhost:5000/users/admin/all", {
+      .get("https://moltaqa-it.onrender.com/users/admin/all", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -43,7 +43,7 @@ const AdminSide = () => {
     dispatch(Logout());
     localStorage.removeItem("active");
     axios
-      .put(`http://localhost:5000/users/isNotlogin/false/${userId}`, {})
+      .put(`https://moltaqa-it.onrender.com/users/isNotlogin/false/${userId}`, {})
       .then((result) => {})
       .catch((err) => {
         console.log(err);

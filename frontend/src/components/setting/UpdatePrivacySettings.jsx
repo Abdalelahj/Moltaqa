@@ -22,7 +22,7 @@ const UpdatePrivacySettings = () => {
   // Fetch current privacy settings
   useEffect(() => {
     axios
-      .get("http://localhost:5000/settings/privacy", {
+      .get("https://moltaqa-it.onrender.com/settings/privacy", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => {
@@ -54,7 +54,7 @@ const UpdatePrivacySettings = () => {
     try {
       // إرسال طلب GET للبحث عن المستخدمين بناءً على الاسم
       const response = await axios.get(
-        `http://localhost:5000/users/userName/search/${value}`
+        `https://moltaqa-it.onrender.com/users/userName/search/${value}`
       ,{
         headers: {
           Authorization: `Bearer ${token}`,
@@ -78,7 +78,7 @@ const UpdatePrivacySettings = () => {
     try {
       setLoading(true);
       const response = await axios.post(
-        "http://localhost:5000/settings/privacy",
+        "https://moltaqa-it.onrender.com/settings/privacy",
         {
           profile_visibility: values.profile_visibility,
           blocked_accounts: values.blocked_accounts || undefined,

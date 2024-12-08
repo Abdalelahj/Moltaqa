@@ -75,7 +75,7 @@ const Posts = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/followers/posty/${userId}`, {
+      .get(`https://moltaqa-it.onrender.com/followers/posty/${userId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -90,7 +90,7 @@ const Posts = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/posts/saved", {
+      .get("https://moltaqa-it.onrender.com/posts/saved", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -113,7 +113,7 @@ const Posts = () => {
       postInfo.image !== null
     ) {
       axios
-        .post("http://localhost:5000/posts", postInfo, {
+        .post("https://moltaqa-it.onrender.com/posts", postInfo, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -138,7 +138,7 @@ const Posts = () => {
   const handleUpdatePost = (postId) => {
     axios
       .put(
-        `http://localhost:5000/posts/${postId}`,
+        `https://moltaqa-it.onrender.com/posts/${postId}`,
         { body: editPostText },
         {
           headers: {
@@ -165,7 +165,7 @@ const Posts = () => {
       centered: true,
       onOk: () => {
         axios
-          .delete(`http://localhost:5000/posts/${postId}/hard`, {
+          .delete(`https://moltaqa-it.onrender.com/posts/${postId}/hard`, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -192,7 +192,7 @@ const Posts = () => {
       onOk: () => {
         axios
           .post(
-            `http://localhost:5000/posts/add&save/${postId}`,
+            `https://moltaqa-it.onrender.com/posts/add&save/${postId}`,
             {},
             {
               headers: {

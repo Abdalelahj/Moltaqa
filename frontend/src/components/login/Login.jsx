@@ -31,13 +31,13 @@ const Login = () => {
       Object.values(userInfo)[1] !== null
     ) {
       axios
-        .post("http://localhost:5000/users/login", userInfo)
+        .post("https://moltaqa-it.onrender.com/users/login", userInfo)
         .then((res) => {
           const decoded = jwtDecode(res.data.token);
           setRole(decoded.role_id);
           axios
             .put(
-              `http://localhost:5000/users/islogin/true/${res.data.userId}`,
+              `https://moltaqa-it.onrender.com/users/islogin/true/${res.data.userId}`,
               {}
             )
             .then((result) => {})
@@ -304,13 +304,13 @@ S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715
                 const decode = jwtDecode(credentialResponse.credential);
                 const data = { email: decode.email, password: decode.sub };
                 axios
-                  .post("http://localhost:5000/users/login", data)
+                  .post("https://moltaqa-it.onrender.com/users/login", data)
                   .then((res) => {
                     const decoded = jwtDecode(res.data.token);
                     setRole(decoded.role_id);
                     axios
                       .put(
-                        `http://localhost:5000/users/islogin/true/${res.data.userId}`,
+                        `https://moltaqa-it.onrender.com/users/islogin/true/${res.data.userId}`,
                         {}
                       )
                       .then((result) => {})

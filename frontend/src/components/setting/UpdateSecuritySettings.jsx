@@ -16,7 +16,7 @@ const UpdateSecuritySettings = () => {
     e.preventDefault();
 
     axios
-      .put("http://localhost:5000/settings/security", formData, {
+      .put("https://moltaqa-it.onrender.com/settings/security", formData, {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       })
       .then((response) => {

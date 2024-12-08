@@ -39,7 +39,7 @@ const UpdateGeneralSettings = () => {
     });
 
     axios
-      .put("http://localhost:5000/settings/general", payload, {
+      .put("https://moltaqa-it.onrender.com/settings/general", payload, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
           "Content-Type": "multipart/form-data", // هام لإرسال البيانات مع الملفات
@@ -109,7 +109,7 @@ const UpdateGeneralSettings = () => {
           <Form.Item label="Profile Image" name="profile_image">
             <Upload
               name="file" // يجب أن يتوافق مع الحقل الذي يتعامل معه السيرفر
-              action="http://localhost:5000/upload" // استبدل بعنوان رفع الصورة في API
+              action="https://moltaqa-it.onrender.com/upload" // استبدل بعنوان رفع الصورة في API
               headers={{
                 Authorization: `Bearer ${localStorage.getItem("token")}`,
               }}

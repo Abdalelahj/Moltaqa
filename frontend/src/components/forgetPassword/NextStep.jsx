@@ -12,7 +12,7 @@ const NextStep = () => {
     if (newPassword.newPass === newPassword.confirm) {
       axios
         .put(
-          `http://localhost:5000/users/login/re/?email=${email}`,
+          `https://moltaqa-it.onrender.com/users/login/re/?email=${email}`,
           {password:newPassword.newPass}
         )
         .then((res) => {

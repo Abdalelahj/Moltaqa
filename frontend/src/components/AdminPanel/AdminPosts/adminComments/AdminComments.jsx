@@ -24,7 +24,7 @@ const AdminComments = ({ id, setIsVisible }) => {
   
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/comments/${postId}/post`, {
+      .get(`https://moltaqa-it.onrender.com/comments/${postId}/post`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -39,7 +39,7 @@ const AdminComments = ({ id, setIsVisible }) => {
 
   const handleDeleteComment = (commentId) => {
     axios
-      .delete(`http://localhost:5000/comments/${commentId}`, {
+      .delete(`https://moltaqa-it.onrender.com/comments/${commentId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

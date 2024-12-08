@@ -34,7 +34,7 @@ const Home = ({ socket }) => {
 
   const handelSearch = () => {
     axios
-      .get(`http://localhost:5000/users/userName/search/${searchTerm}`, {
+      .get(`https://moltaqa-it.onrender.com/users/userName/search/${searchTerm}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

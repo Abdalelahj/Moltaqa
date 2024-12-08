@@ -20,8 +20,8 @@ const Followers = () => {
 
   useEffect(() => {
     const url = show
-      ? `http://localhost:5000/followers/${userId}/following`
-      : `http://localhost:5000/followers/${userId}/follower`;
+      ? `https://moltaqa-it.onrender.com/followers/${userId}/following`
+      : `https://moltaqa-it.onrender.com/followers/${userId}/follower`;
 
     axios
       .get(url, {
@@ -37,8 +37,8 @@ const Followers = () => {
 
   const handleUnfollow = (id) => {
     const url = show
-      ? `http://localhost:5000/followers/${id}/unfollow`
-      : `http://localhost:5000/followers/${id}/trimFollower`;
+      ? `https://moltaqa-it.onrender.com/followers/${id}/unfollow`
+      : `https://moltaqa-it.onrender.com/followers/${id}/trimFollower`;
 
     axios
       .delete(url, {

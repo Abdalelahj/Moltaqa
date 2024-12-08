@@ -37,7 +37,7 @@ const Comments = () => {
   });
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/comments/${postId}/post`, {
+      .get(`https://moltaqa-it.onrender.com/comments/${postId}/post`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -54,7 +54,7 @@ const Comments = () => {
     
     axios
       .post(
-        `http://localhost:5000/comments/${postId}`,
+        `https://moltaqa-it.onrender.com/comments/${postId}`,
         {
           comment: newComment,
         },
@@ -75,7 +75,7 @@ const Comments = () => {
   const handleEditComment = (commentId) => {
     axios
       .put(
-        `http://localhost:5000/comments/${commentId}`,
+        `https://moltaqa-it.onrender.com/comments/${commentId}`,
         {
           comment: editingText,
         },
@@ -102,7 +102,7 @@ const Comments = () => {
 
   const handleDeleteComment = (commentId) => {
     axios
-      .delete(`http://localhost:5000/comments/${commentId}`, {
+      .delete(`https://moltaqa-it.onrender.com/comments/${commentId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

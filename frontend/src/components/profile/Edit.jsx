@@ -30,7 +30,7 @@ const Edit = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/users/${userId}`, {
+      .get(`https://moltaqa-it.onrender.com/users/${userId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -60,7 +60,7 @@ const Edit = () => {
       .then((data) => {
         axios
           .put(
-            `http://localhost:5000/users/${userId}`,
+            `https://moltaqa-it.onrender.com/users/${userId}`,
             {
               profile_image: data.url,
             },
@@ -87,7 +87,7 @@ const Edit = () => {
 
   const confirmUpdate = () => {
     axios
-      .put(`http://localhost:5000/users/${userId}`, userInfo, {
+      .put(`https://moltaqa-it.onrender.com/users/${userId}`, userInfo, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -112,7 +112,7 @@ const Edit = () => {
       if (newPass.oldPass) {
         axios
           .post(
-            `http://localhost:5000/users/checkpass/${userId}`,
+            `https://moltaqa-it.onrender.com/users/checkpass/${userId}`,
             { password: newPass.oldPass },
             {
               headers: {
@@ -124,7 +124,7 @@ const Edit = () => {
             if (result.data.success) {
               axios
                 .put(
-                  `http://localhost:5000/users/${userId}`,
+                  `https://moltaqa-it.onrender.com/users/${userId}`,
                   {
                     password: newPass.new_pass,
                   },
