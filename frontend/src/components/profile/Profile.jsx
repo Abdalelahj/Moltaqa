@@ -34,7 +34,7 @@ import {
   SendOutlined,
   EditOutlined,
 } from "@ant-design/icons";
-import "./Profile.css";
+import "./profile.css";
 import Like from "../likes/Like";
 import { setVisitId } from "../redux/reducers/auth";
 
