@@ -34,7 +34,7 @@ const Home = ({ socket }) => {
 
   const handelSearch = () => {
     axios
-      .get(`https://moltaqa-it.onrender.com/users/userName/search/${searchTerm}`, {
+      .get(`http://localhost:5000/users/userName/search/${searchTerm}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -73,7 +73,7 @@ const Home = ({ socket }) => {
   return (
     <div className="parent">
       <div className="nav" onClick={(e) => {}}>
-        <img src="../../Preview.png" className="MoltaqaIcon" alt="Logo" />
+        <img src="./Preview.png" className="MoltaqaIcon" alt="Logo" />
         <div className="notification">
           <Notification socket={socket} />
         </div>
