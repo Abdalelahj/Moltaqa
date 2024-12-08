@@ -27,7 +27,7 @@ const AdminDashBoard = () => {
     <div className="parentDash">
       <div className="AdNav">
         {" "}
-        <img src="/Preview.png" type="image/apng" className="Icon" />
+        <img src="/Preview.jpg" className="Icon" />
         <h3>Hi {AdminProfile?.user_name}</h3>
       </div>
       <div className="orgAdmin">

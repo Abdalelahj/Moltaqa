@@ -73,7 +73,7 @@ const Home = ({ socket }) => {
   return (
     <div className="parent">
       <div className="nav" onClick={(e) => {}}>
-        <img src="/Preview.png" type="image/apng" className="MoltaqaIcon" alt="Logo" />
+        <img src="/Preview.jpg"  className="MoltaqaIcon" alt="Logo" />
         <div className="notification">
           <Notification socket={socket} />
         </div>
