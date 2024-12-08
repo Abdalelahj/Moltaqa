@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./dashboard.css";
+import "./dashBoard.css";
 import { Outlet, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
