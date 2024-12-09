@@ -7,8 +7,8 @@ import moment from "moment-timezone";
 const ChatMessages = ({ socket, to, setShow }) => {
   const formatRelativeTime = (timestamp) => {
     const date = new Date(timestamp);
-    const offset = date.getTimezoneOffset();
-    date.setMinutes(date.getMinutes() - offset);
+    // const offset = date.getTimezoneOffset();
+    // date.setMinutes(date.getMinutes() - offset);
     const localTime = moment.utc(date);
 
     return localTime.fromNow();
