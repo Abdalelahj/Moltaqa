@@ -350,7 +350,7 @@ S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715
         </div>
         <div className="Welcome-Div-L">
           <h4 className="Welcome-Login">Welcome to</h4>
-          <img src="/Preview.jpg"  className="Moltaqa-Logo" />
+          <img src="https://res.cloudinary.com/dniaphcwx/image/upload/v1733703537/mzt9fapx5pjcnrkczcqr.jpg"  className="Moltaqa-Logo" />
           <p className="Description-Login">
             In This Application You Can Contact With Any Person Using This App
             And Talk About Your Opinions By Creating Posts Or Comments, Also You
