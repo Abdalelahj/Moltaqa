@@ -29,6 +29,7 @@ import SecuritySettings from "./components/setting/UpdateSecuritySettings";
 import ContactUs from "./components/setting/ContactUs";
 import AdminComments from "./components/AdminPanel/AdminPosts/adminComments/AdminComments";
 import Explore from "./components/explore/Explore";
+import NotFound from "./components/404/NotFound"
 import io from "socket.io-client";
 
 
@@ -181,6 +182,10 @@ function App() {
         },
       ],
     },
+   {
+    path:"*",
+    element: <NotFound />
+   }
   ]);
 
   return <div className={`app ${theme}`}>{element}</div>;
