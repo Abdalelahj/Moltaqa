@@ -351,7 +351,7 @@ S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715
 
         <div className="Welcome-Div">
           <h4 className="Welcome-Login-R">Welcome to</h4>
-          <img src="../../Preview.png" className="Moltaqa-Logo-R" />
+          <img src="https://res.cloudinary.com/dniaphcwx/image/upload/v1733703537/mzt9fapx5pjcnrkczcqr.jpg" className="Moltaqa-Logo-R" />
           <p className="Description-Login-R">
             In this application, you can contact with any person using this app
             and talk about your opinions by creating posts or comments. Also,
