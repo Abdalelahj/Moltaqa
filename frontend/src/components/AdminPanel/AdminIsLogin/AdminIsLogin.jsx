@@ -3,6 +3,7 @@ import "./islogin.css";
 import {  useSelector } from "react-redux";
 import { Button } from "antd";
 import { useNavigate } from "react-router-dom";
+
 const AdminIsLogin = () => {
   const navigate = useNavigate();
   const users = useSelector((users) => {
@@ -19,7 +20,7 @@ const AdminIsLogin = () => {
         return (
           <div key={user.user_id} className="innerLoginAdmin">
             <div className="infoAdminLogin">
-              <img src={user.profile_image} />
+              <img src={user.profile_image || "./default-profile.png"} />
               <h5>@{user.user_name}</h5>
             </div>
 
