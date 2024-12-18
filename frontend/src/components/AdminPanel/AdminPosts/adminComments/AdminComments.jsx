@@ -34,7 +34,7 @@ const AdminComments = ({ id, isVisible, handleCloseComments }) => {
     setLoading(true);
     try {
       const response = await axios.get(
-        `http://localhost:5000/comments/${id}/post`,
+        `https://moltaqa-it.onrender.com/comments/${id}/post`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
