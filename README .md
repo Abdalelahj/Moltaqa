@@ -1,6 +1,6 @@
 <p align="center">
 
- <img width="200px" height="200px" src="./Preview.png" alt="MOLTAQA">
+ <img width="200px" height="200px" src="(https://res.cloudinary.com/dniaphcwx/image/upload/v1733703537/mzt9fapx5pjcnrkczcqr.jpg)" alt="MOLTAQA">
  
 </p>
 
